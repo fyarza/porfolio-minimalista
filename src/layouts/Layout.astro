@@ -8,6 +8,12 @@ interface Props {
 const { title } = Astro.props
 
 const { image, summary, url } = basics
+// Asegurar que las rutas usen el base path correctamente
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '') // Remover barra final si existe
+const imagePath = image.startsWith('/') 
+  ? `${baseUrl}${image}` 
+  : `${baseUrl}/${image}`
+const faviconPath = `${baseUrl}/favicon.svg`
 ---
 
 <!doctype html>
@@ -17,8 +23,8 @@ const { image, summary, url } = basics
     <title>{title}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href={image} />
+    <link rel="icon" type="image/svg+xml" href={faviconPath} />
+    <link rel="preload" as="image" href={imagePath} />
 
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
