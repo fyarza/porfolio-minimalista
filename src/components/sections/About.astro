@@ -1,10 +1,10 @@
 ---
 import Section from "../Section.astro"
 import { basics as basicsDefault } from "@cv"
-import type cvType from "../../cv.json"
+import type { CV as cvType } from "@/cv.d"
 
 interface Props {
-  cvData?: typeof cvType
+  cvData?: cvType
   title?: string
 }
 

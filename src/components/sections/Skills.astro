@@ -22,10 +22,10 @@ import SQLServer from "@/icons/SQLServer.astro"
 import PostgresSQL from "@/icons/PostgresSQL.astro"
 import Docker from "@/icons/Docker.astro"
 import { skills as skillsDefault } from "@cv"
-import type cvType from "../../cv.json"
+import type { CV as cvType } from "@/cv.d"
 
 interface Props {
-  cvData?: typeof cvType
+  cvData?: cvType
   title?: string
 }
 
