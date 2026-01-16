@@ -1,0 +1,50 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+
+import cvEnglish from "../../cv_english.json"
+const { basics } = cvEnglish
+const { name, label } = basics
+---
+
+<Layout title={`Portfolio of ${name} - ${label}`}>
+  <main>
+    <Hero cvData={cvEnglish} />
+    <About cvData={cvEnglish} title="About me" />
+    <Experience cvData={cvEnglish} title="Work Experience" />
+    <Education cvData={cvEnglish} title="Education" />
+    <Projects cvData={cvEnglish} title="Projects" />
+    <Skills cvData={cvEnglish} title="Skills" />
+  </main>
+
+  <KeyboardManager 
+    cvData={cvEnglish}
+    footerText="Press <kbd>Cmd</kbd> + <kbd>K</kbd> to open the command palette."
+    placeholderText="Search command"
+    socialSectionTitle="Social"
+    visitText="Visit"
+    printTitle="Print"
+    actionsSectionTitle="Actions"
+  />
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

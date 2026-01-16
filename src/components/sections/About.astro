@@ -1,11 +1,19 @@
 ---
 import Section from "../Section.astro"
+import { basics as basicsDefault } from "@cv"
+import type cvType from "../../cv.json"
 
-import { basics } from "@cv"
+interface Props {
+  cvData?: typeof cvType
+  title?: string
+}
+
+const { cvData, title = "Sobre mí" } = Astro.props
+const basics = cvData?.basics ?? basicsDefault
 const { summary } = basics
 ---
 
-<Section title="Sobre mí">
+<Section title={title}>
   <p>
     {summary}
   </p>

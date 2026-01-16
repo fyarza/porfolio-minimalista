@@ -11,11 +11,26 @@ import Git from "@/icons/git.astro"
 import GitHub from "@/icons/GitHub.astro"
 import Tailwind from "@/icons/tailwind.astro"
 import Next from "@/icons/next.astro"
-import { skills } from "@cv"
 import Swift from "@/icons/swift.astro"
 import SwiftUI from "@/icons/swiftui.astro"
 import Kotlin from "@/icons/kotlin.astro"
 import Flutter from "@/icons/flutter.astro"
+import Php from "@/icons/Php.astro"
+import NestJs from "@/icons/NestJs.astro"
+import Python from "@/icons/Python.astro"
+import SQLServer from "@/icons/SQLServer.astro"
+import PostgresSQL from "@/icons/PostgresSQL.astro"
+import Docker from "@/icons/Docker.astro"
+import { skills as skillsDefault } from "@cv"
+import type cvType from "../../cv.json"
+
+interface Props {
+  cvData?: typeof cvType
+  title?: string
+}
+
+const { cvData, title = "Habilidades" } = Astro.props
+const skills = cvData?.skills ?? skillsDefault
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -33,10 +48,16 @@ const SKILLS_ICONS: Record<string, any> = {
   SwiftUI,
   Kotlin,
   Flutter,
+  Php,
+  NestJs,
+  Python,
+  SQLServer,
+  PostgresSQL,
+  Docker,
 }
 ---
 
-<Section title="Habilidades">
+<Section title={title}>
   <ul>
     {
       skills.map(({ name }) => {

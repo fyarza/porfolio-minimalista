@@ -1,6 +1,14 @@
 ---
-import { basics } from "@cv"
+import { basics as basicsDefault } from "@cv"
+import type cvType from "../../cv.json"
 import Section from "@/components/Section.astro"
+
+interface Props {
+  cvData?: typeof cvType
+}
+
+const { cvData } = Astro.props
+const basics = cvData?.basics ?? basicsDefault
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
 import X from "@/icons/X.astro"
@@ -114,9 +122,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
   img {
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain; // cambiado de 'cover' a 'contain'
     width: 128px;
     border-radius: 16px;
+    background-color: #fff; // opcional: añadir un fondo
+    padding: 4px; // opcional: añadir un pequeño padding
   }
 
   span {

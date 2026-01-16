@@ -1,190 +1,347 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
+    "name": "Federico Antonio Yarza Castillo",
+    "label": "Full Stack Developer con más de 8 años de experiencia en el desarrollo de software mobile y web",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "email": "federicoyarza295@gmail.com",
+    "phone": "+58 4124067967",
+    "url": "https://github.com/fyarza",
+    "summary": "+8 años de experiencia como Desarrollador Web y Mobile Full Stack. Actualmente soy Desarrollador Full Stack en Epidata trabajando en proyectos como Gabrica Hub y Postulaciones ANII. Vivo en Valencia, Venezuela. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales, siempre enfocado en desarrollar soluciones escalables y personalizadas que aceleran la transformación digital de las organizaciones.",
     "location": {
-      "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "address": "Valencia, Carabobo",
+      "postalCode": "2001",
+      "city": "Valencia",
+      "countryCode": "VE",
+      "region": "Venezuela"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "fyarza",
+        "url": "https://linkedin.com/in/federico-antonio-yarza-castillo-351621163"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "fyarza",
+        "url": "https://github.com/fyarza"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Epidata",
+      "position": "Desarrollador Full Stack",
+      "url": "https://epidata.net/es/",
+      "startDate": "2023-01-01",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "Desarrollo de soluciones empresariales y sistemas de gestión, utilizando tecnologías modernas y eficientes. Lideré proyectos críticos como el Hub Digital Multi-País para Gabrica y la modernización de sistemas para ANII.",
       "highlights": [
-        "Started the company"
+        "Lideré la migración del ecosistema de PHP 5.3 a 8.2 para ANII, mejorando rendimiento y seguridad",
+        "Diseñé e implementé un monorepo con Turborepo y pnpm workspaces para Gabrica Hub",
+        "Implementé arquitectura Multi-Zone con Next.js, unificando múltiples aplicaciones bajo un solo dominio",
+        "Desarrollé backend con NestJS 10.x aplicando Domain-Driven Design (DDD) y Arquitectura Hexagonal",
+        "Establecí estrategias de testing con cobertura mínima del 80% en packages compartidos",
+        "Implementé internacionalización multi-país con next-intl para 5 países (Argentina, Colombia, Chile, Uruguay, Paraguay)",
+        "Actué como mentor técnico para el equipo de desarrollo"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "Devinol S.A",
+      "position": "Desarrollador Full Stack Mobile",
+      "startDate": "2022-03-01",
+      "endDate": "2022-10-01",
+      "summary": "Desarrollo de aplicaciones móviles con enfoque en experiencia offline-first y optimización de funcionalidades de geolocalización para aplicaciones de citas y servicios.",
       "highlights": [
-        "Started the company"
+        "Diseñé y desarrollé aplicación de entrenamiento físico con enfoque offline-first",
+        "Optimicé funcionalidades de geolocalización para aplicación de citas, mejorando precisión y rendimiento",
+        "Lideré la refactorización completa de aplicación de búsqueda de bebidas para restaurantes"
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "Freelance",
+      "position": "Consultor Tecnológico y Desarrollador Independiente",
+      "startDate": "2020-07-01",
+      "endDate": "2022-04-01",
+      "summary": "Diseño e implementación de soluciones digitales personalizadas para diversos sectores empresariales, incluyendo sistemas ERP, e-commerce, dashboards analíticos y plataformas educativas.",
       "highlights": [
-        "Started the company"
+        "Desarrollo de aplicaciones web y móviles con integración a sistemas ERP y contables",
+        "Implementación de soluciones e-commerce con conexión a múltiples plataformas de pago",
+        "Creación de interfaces para gestión de datos satelitales",
+        "Diseño de sistema integral para gestión y automatización de redes sociales",
+        "Creación de plataforma para gestión estudiantil con control de asistencia y calificaciones"
+      ]
+    },
+    {
+      "name": "Rv. Medios C.A.",
+      "position": "Desarrollador Full Stack con Especialización en Soluciones Empresariales",
+      "startDate": "2018-06-01",
+      "endDate": "2020-06-01",
+      "summary": "Desarrollo web integral combinando tecnologías frontend modernas (React.js, Vue.js) con soluciones backend robustas en Laravel y PHP. Especialización en sistemas empresariales y transformación digital.",
+      "highlights": [
+        "Desarrollo de sistema administrativo contable ARP para Lecomp",
+        "Implementación de arquitectura de microservicios para sistema mayorista",
+        "Desarrollo de módulo de pagos personalizado para Prestashop",
+        "Transformación digital de empresas: Rv. Medios, Vepaco, Cobertura y Tasas, Lecomp",
+        "Desarrollo web integral con React.js, Vue.js, Laravel y PHP"
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "education": [
+    {
+      "institution": "Facultad Experimental de Ciencias y Tecnología - Universidad de Carabobo",
+      "url": "http://www.uc.edu.ve/",
+      "area": "Licenciatura en Computación",
+      "studyType": "Bachelor",
+      "startDate": "2008-01-01",
+      "endDate": "2018-01-01"
+    }
+  ],
   "skills": [
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Markup"]
     },
     {
       "name": "CSS",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive",
+        "Tailwind CSS"
       ]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack", "ES6+"]
     },
     {
       "name": "Tailwind",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive",
+        "Utility-first CSS"
       ]
     },
     {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset",
+        "Type Safety"
       ]
     },
     {
       "name": "Node",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor",
+        "REST API"
       ]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend",
+        "Relational Database"
+      ]
+    },
+    {
+      "name": "SQLServer",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend",
+        "Microsoft SQL Server",
+        "Store Procedure",
+        "Triggers",
+        "Functions"
+      ]
+    },
+    {
+      "name": "PostgresSQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Relational Database"
       ]
     },
     {
       "name": "Git",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Version Control"
       ]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git",
+        "CI/CD"
       ]
     },
     {
       "name": "Next.js",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation",
+        "App Router"
       ]
     },
     {
       "name": "React",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI",
+        "React 19",
+        "Hooks"
       ]
+    },
+    {
+      "name": "Php",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo PHP",
+        "Backend",
+        "Laravel",
+        "Wordpress",
+        "Symfony",
+        "PHP 8.2"
+      ]
+    },
+    {
+      "name": "NestJs",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Backend",
+        "Backend",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Microservices",
+        "DDD",
+        "Hexagonal Architecture"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Medio",
+      "keywords": [
+        "Desarrollo Backend",
+        "Backend",
+        "Python",
+        "Flask",
+        "Django",
+        "FastAPI"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Medio",
+      "keywords": ["Docker", "Contenedores", "Virtualización", "DevOps"]
+    },
+    {
+      "name": "Vue.js",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Framework", "UI"]
+    },
+    {
+      "name": "Vitest",
+      "level": "Avanzado",
+      "keywords": ["Testing", "Frontend", "Unit Testing", "Test Runner"]
+    },
+    {
+      "name": "Jest",
+      "level": "Avanzado",
+      "keywords": ["Testing", "Backend", "Unit Testing", "Integration Testing"]
+    },
+    {
+      "name": "React Testing Library",
+      "level": "Avanzado",
+      "keywords": ["Testing", "Frontend", "Component Testing", "React"]
+    },
+    {
+      "name": "Storybook",
+      "level": "Avanzado",
+      "keywords": [
+        "UI Development",
+        "Documentation",
+        "Component Library",
+        "Design System"
+      ]
+    },
+    {
+      "name": "Turborepo",
+      "level": "Avanzado",
+      "keywords": ["Monorepo", "Build System", "Task Runner", "pnpm"]
+    },
+    {
+      "name": "TanStack Query",
+      "level": "Avanzado",
+      "keywords": [
+        "State Management",
+        "Data Fetching",
+        "Caching",
+        "Server State"
+      ]
+    },
+    {
+      "name": "Zustand",
+      "level": "Avanzado",
+      "keywords": ["State Management", "Client State", "React", "Lightweight"]
+    },
+    {
+      "name": "React Hook Form",
+      "level": "Avanzado",
+      "keywords": ["Forms", "Validation", "React", "Performance"]
+    },
+    {
+      "name": "Zod",
+      "level": "Avanzado",
+      "keywords": [
+        "Validation",
+        "TypeScript",
+        "Schema Validation",
+        "Type Safety"
+      ]
+    },
+    {
+      "name": "next-intl",
+      "level": "Avanzado",
+      "keywords": ["Internationalization", "i18n", "Next.js", "Multi-language"]
     }
   ],
   "languages": [
@@ -197,79 +354,72 @@
       "fluency": "Advanced"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Postulaciones ANII",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "description": "Sistema de registro de propuestas para el capital humano del Uruguay",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "Migración PHP 5.3 a 8.2",
+        "Arquitectura moderna con principios SOLID",
+        "Sistema integral de gestión de formularios"
       ],
-      "url": "https://mars.codes"
+      "url": "https://postulaciones-ti.anii.org.uy/"
     },
     {
-      "name": "AdventJS",
+      "name": "Generador de Formularios ANII",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "description": "Sistema encargado de la administración, sobre los distintos formularios que se aperturan en el llamados de las postulaciones",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "Administración de formularios dinámicos",
+        "Sistema de postulaciones"
       ],
-      "url": "https://adventjs.dev"
+      "url": "https://generador-formularios-fe-ti.anii.org.uy/"
     },
     {
-      "name": "Codember",
+      "name": "Gabrica Hub",
       "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
+      "description": "Hub digital multi-país construido con Next.js y NestJS para consolidar múltiples canales de negocio (B2C, B2B, MV, Ética)",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        "Monorepo con Turborepo",
+        "Arquitectura Multi-Zone con Next.js",
+        "DDD + Arquitectura Hexagonal",
+        "Multi-país: Argentina, Colombia, Chile, Uruguay, Paraguay",
+        "Testing con 80%+ cobertura"
       ],
-      "url": "https://codember.dev"
+      "url": "https://www.gabrica.co/"
     },
     {
-      "name": "codi.link",
+      "name": "CVUy",
       "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
+      "description": "Mantenimiento y actualización permanente de información validada, acerca de las capacidades del capital humano del Uruguay",
+      "highlights": ["Gestión de información del capital humano"],
+      "url": "https://cvuy-ti.anii.org.uy/"
     },
     {
-      "name": "Pruebas Técnicas",
+      "name": "Fletamos",
       "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
+      "description": "App de servicios de fletes, transporte de carga",
+      "highlights": ["Aplicación móvil", "Servicios de transporte"],
+      "url": "https://play.google.com/store/search?q=fletamos&c=apps&hl=es_VE"
     },
     {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+      "name": "Myngly",
+      "isActive": true,
+      "description": "App para citas, a través del uso de tecnología de geoetiquetado",
+      "highlights": ["Aplicación móvil", "Geolocalización", "Sistema de citas"],
+      "url": "https://play.google.com/store/apps/details?id=com.myngly.myngly&hl=es_VE"
+    },
+    {
+      "name": "Fitlogger",
+      "isActive": true,
+      "description": "App para monitorear entrenamientos y progreso fitness",
       "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
+        "Aplicación móvil",
+        "Offline-first",
+        "Seguimiento de entrenamientos"
       ],
-      "url": "https://miduconf.com"
+      "url": "https://play.google.com/store/apps/details?id=com.fitlogger&hl=es_VE"
     }
   ]
 }
