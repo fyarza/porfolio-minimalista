@@ -93,7 +93,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       </footer>
     </div>
     <figure>
-      <img src={imagePath} alt={name} />
+      <img src={imagePath} alt={name} width={244} />
     </figure>
   </div>
 </Section>
@@ -127,9 +127,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
   img {
     aspect-ratio: 1 / 1;
-    object-fit: contain; // cambiado de 'cover' a 'contain'
-    width: 128px;
-    border-radius: 16px;
+    object-fit: cover; // cambiado de 'cover' a 'contain'
+    width: 244px;
+    border-radius: 100%;
     background-color: #fff; // opcional: añadir un fondo
     padding: 4px; // opcional: añadir un pequeño padding
   }

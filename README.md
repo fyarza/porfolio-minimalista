@@ -1,20 +1,20 @@
 
-
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
 <h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
+    <em>Portafolio Personal</em> - Federico Antonio Yarza Castillo
 </h2>
 <p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
+Portafolio web minimalista construido con Astro que muestra mi experiencia como Full Stack Developer
 </p>
-
-
+<p>
+Visita el sitio: <a href="https://fyarza.github.io/porfolio-minimalista/">https://fyarza.github.io/porfolio-minimalista/</a>
+</p>
+<p>
+Esquema del JSON de CV basado en <a href="https://jsonresume.org/schema/">jsonresume.org</a>
+</p>
 <p>
 Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
-
 </p>
-
 </div>
 
 <div align="center">
@@ -26,14 +26,21 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
         Comandos
     </a>
     <span>&nbsp;✦&nbsp;</span>
+    <a href="#🌐-versiones">
+        Versiones
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#🔑-licencia">
         Licencia
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
+    <a href="https://github.com/fyarza">
+        GitHub
     </a>
-   
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="https://linkedin.com/in/federico-antonio-yarza-castillo-351621163">
+        LinkedIn
+    </a>
 </div>
 
 <p></p>
@@ -41,64 +48,122 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 <div align="center">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 </div>
 
-<img src="portada.png"></img>
+<img src="portada.png" alt="Preview del Portafolio de Federico Yarza"></img>
 
-## 🛠️ Stack
+## 👨‍💻 Sobre el Proyecto
+
+Este es mi portafolio personal construido con **Astro**, mostrando mi experiencia como **Full Stack Developer con más de 8 años de experiencia** en el desarrollo de software mobile y web.
+
+### Características
+
+- ✅ **Responsive Design** - Se adapta a todos los dispositivos
+- ✅ **Bilingüe** - Versiones en español e inglés (`/` y `/en`)
+- ✅ **Optimizado para impresión** - Genera PDFs perfectos
+- ✅ **Hotkey Navigation** - Navegación rápida con atajos de teclado (Cmd/Ctrl + K)
+- ✅ **GitHub Pages** - Desplegado automáticamente en cada push
+
+## 🛠️ Stack Tecnológico
 
 - [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
-
+- [**TypeScript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
+- [**Hotkeypad**](https://github.com/ssleptsov/hotkeypad) - Menú desplegable con atajos de teclado hecho en puro JavaScript.
 
 ## 🚀 Empezar
 
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
+### 1. Clonar el repositorio
 
+```bash
+git clone https://github.com/fyarza/porfolio-minimalista.git
+cd porfolio-minimalista
+```
 
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+### 2. Instalar dependencias
+
+Este proyecto usa [pnpm](https://pnpm.io/installation) como gestor de dependencias:
 
 ```bash
 # Activa pnpm en MacOS, WSL & Linux:
 corepack enable
 corepack prepare pnpm@latest --activate
 
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+# Instala las dependencias
+pnpm install
 ```
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
+### 3. Personalizar tu contenido
+
+Edita los archivos JSON para agregar tu información:
+
+- `cv.json` - Versión en español de tu CV
+- `cv_english.json` - Versión en inglés de tu CV
+
+### 4. Ejecutar en desarrollo
 
 ```bash
-# Disfruta del resultado
 pnpm dev
 ```
 
-
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
-
+Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
 
 ## 🧞 Comandos
 
 |     | Comando          | Acción                                        |
 | :-- | :--------------- | :-------------------------------------------- |
 | ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+| ⚙️  | `build`          | Hace un empaquetado de producción en `./dist/`.      |
+| ⚙️  | `preview`        | Vista previa de la build de producción en local. |
+| ⚙️  | `check`          | Valida tipos con Astro Check (opcional). |
 
+## 🌐 Versiones del Sitio
 
+Este portafolio está disponible en dos idiomas:
 
-## 🔑 Licencia
+- **Español**: [https://fyarza.github.io/porfolio-minimalista/](https://fyarza.github.io/porfolio-minimalista/)
+- **English**: [https://fyarza.github.io/porfolio-minimalista/en](https://fyarza.github.io/porfolio-minimalista/en)
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
+## 📦 Estructura del Proyecto
 
+```
+├── public/          # Archivos estáticos (imágenes, favicon)
+├── src/
+│   ├── components/  # Componentes reutilizables
+│   │   ├── sections/ # Secciones del CV
+│   │   └── ...
+│   ├── layouts/     # Layouts de página
+│   ├── pages/       # Páginas (index.astro, en.astro)
+│   └── ...
+├── cv.json          # Datos del CV en español
+├── cv_english.json  # Datos del CV en inglés
+└── astro.config.mjs # Configuración de Astro
+```
 
+## 🚢 Despliegue
 
+Este proyecto está configurado para desplegarse automáticamente en **GitHub Pages** usando GitHub Actions.
+
+Cada push a la rama `main` dispara el workflow de despliegue automático.
+
+Para configurar en tu propio repositorio:
+
+1. Edita `astro.config.mjs` con tu URL de GitHub Pages
+2. Asegúrate de que el workflow `.github/workflows/deploy.yml` existe
+3. Configura GitHub Pages en Settings → Pages → Source: GitHub Actions
+
+## 📝 Licencia
+
+[MIT](LICENSE.txt) - Creado por [**Federico Antonio Yarza Castillo**](https://github.com/fyarza)
+
+---
+
+<div align="center">
+
+💻 Desarrollado con ❤️ usando [Astro](https://astro.build/)
+
+[GitHub](https://github.com/fyarza) • [LinkedIn](https://linkedin.com/in/federico-antonio-yarza-castillo-351621163)
+
+</div>
