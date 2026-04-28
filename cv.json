@@ -390,6 +390,19 @@
       "url": "https://www.gabrica.co/"
     },
     {
+      "name": "Vanguard (Epidata)",
+      "isActive": true,
+      "description": "Repositorio multi-servicio basado en microservicios con backend en Java (Spring Boot) y frontend web en Next.js, con infraestructura local vía Docker y despliegue en Kubernetes.",
+      "highlights": [
+        "Microservicios Java 17 + Spring Boot 3.x (Maven) con API Gateway (Spring Cloud Gateway) y filtros JWT",
+        "Frontend en Next.js 15 con stack moderno (Tailwind/Radix) y pipeline de build con Bun",
+        "Infra de desarrollo local con docker-compose (SQL Server, Redis, Seq) y variables de entorno por servicio",
+        "CI/CD por servicio con GitHub Actions: build, push a GHCR y despliegue a Kubernetes (self-hosted runners)",
+        "Calidad automatizada con SonarQube mediante workflows dedicados por servicio"
+      ],
+      "url": "https://epidata.net/es/"
+    },
+    {
       "name": "CVUy",
       "isActive": true,
       "description": "Mantenimiento y actualización permanente de información validada, acerca de las capacidades del capital humano del Uruguay",

@@ -115,7 +115,13 @@
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": ["Web development", "Frontend", "Backend", "Fullstack", "ES6+"]
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "ES6+"
+      ]
     },
     {
       "name": "Tailwind",
@@ -178,12 +184,7 @@
     {
       "name": "PostgresSQL",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Relational Database"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Relational Database"]
     },
     {
       "name": "Git",
@@ -370,10 +371,7 @@
       "name": "ANII Form Generator",
       "isActive": true,
       "description": "System responsible for the administration of different forms that are opened in application calls",
-      "highlights": [
-        "Dynamic form administration",
-        "Application system"
-      ],
+      "highlights": ["Dynamic form administration", "Application system"],
       "url": "https://generador-formularios-fe-ti.anii.org.uy/"
     },
     {
@@ -388,6 +386,19 @@
         "Testing with 80%+ coverage"
       ],
       "url": "https://www.gabrica.co/"
+    },
+    {
+      "name": "Vanguard (Epidata)",
+      "isActive": true,
+      "description": "Multi-service repository based on microservices with a Java (Spring Boot) backend and a Next.js web frontend, including local Docker infrastructure and Kubernetes deployments.",
+      "highlights": [
+        "Java 17 + Spring Boot 3.x microservices (Maven) with an API Gateway (Spring Cloud Gateway) and JWT filters",
+        "Next.js 15 frontend with a modern UI stack (Tailwind/Radix) and Bun-based build pipeline",
+        "Local development infrastructure via docker-compose (SQL Server, Redis, Seq) and per-service environment configuration",
+        "Per-service CI/CD with GitHub Actions: build, push to GHCR, and deploy to Kubernetes (self-hosted runners)",
+        "Automated code quality with SonarQube via dedicated workflows per service"
+      ],
+      "url": "https://epidata.net/es/"
     },
     {
       "name": "CVUy",
@@ -414,11 +425,7 @@
       "name": "Fitlogger",
       "isActive": true,
       "description": "App to monitor workouts and fitness progress",
-      "highlights": [
-        "Mobile application",
-        "Offline-first",
-        "Workout tracking"
-      ],
+      "highlights": ["Mobile application", "Offline-first", "Workout tracking"],
       "url": "https://play.google.com/store/apps/details?id=com.fitlogger&hl=es_VE"
     }
   ]
