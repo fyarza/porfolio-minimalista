@@ -410,9 +410,68 @@
     {
       "name": "Fletamos",
       "isActive": true,
-      "description": "Freight services app, cargo transportation",
-      "highlights": ["Mobile application", "Transportation services"],
+      "description": "React Native logistics mobile app for Latin America connecting cargo owners (shippers) with transporters for shipment management and real-time tracking.",
+      "highlights": [
+        "React Native 0.70 + React Navigation 6; Redux Toolkit with persistence (redux-persist/thunk) and feature-based organization",
+        "Shipper and transporter roles: onboarding, vehicles/trailers, drivers, and a multi-step shipment creation flow (route, cargo, payments)",
+        "Map tracking with react-native-maps and geolocation; search, history, and shipment status",
+        "Real-time updates via Pusher/Laravel Echo; in-app chat; push notifications with Firebase and Notifee",
+        "Payments (Venezuela mobile payment, BS/USD transfers); Firebase Auth and Google Sign-In",
+        "UI with Native Base and twrnc utilities; Formik/Yup and react-hook-form; REST client with Axios"
+      ],
       "url": "https://play.google.com/store/search?q=fletamos&c=apps&hl=es_VE"
+    },
+    {
+      "name": "Autokratic",
+      "isActive": true,
+      "description": "React Native (Expo) mobile app for an automotive marketplace connecting buyers and sellers: search, VIN scanning, AI recommendations, messaging, purchase flow, and a dedicated dealer dashboard.",
+      "highlights": [
+        "React Native 0.71 + Expo ~48 + TypeScript; navigation with React Navigation",
+        "State with MobX, MobX-State-Tree and layered architecture (repository pattern, API layer with apisauce)",
+        "Buyers: marketplace with filters, VIN scan, favorites, payments and reports; dealers: inventory, publishing and lead management",
+        "Multi-language i18n (English, Spanish, Arabic, Korean) with RTL; light/dark theme and push notifications",
+        "Google and Apple sign-in, OTP verification; Jest tests and Detox E2E"
+      ],
+      "url": "https://play.google.com/store/search?q=autokratic&c=apps&hl=en_US"
+    },
+    {
+      "name": "RZGroupSAS",
+      "isActive": true,
+      "description": "React Native (Expo) fleet management and transportation app for RZ Group: truckers, company clients, and administrators with services, vehicles, accounting, payments, and documentation.",
+      "highlights": [
+        "React Native 0.71 + Expo 48 + TypeScript; role-based navigation with React Navigation (separate tab stacks per role)",
+        "State with MobX and MobX-State-Tree; layered architecture (API via apisauce with JWT)",
+        "Truckers: vehicles, services, expenses, and documents; companies: service monitoring, expenses, and payments; admin: user management and oversight",
+        "Accounting and charts (ECharts), high-performance lists (Flash List), documents and PDF; Expo modules (camera, print, sharing)",
+        "OTP authentication, role-based registration, Jest tests; optional E2E (e.g. Maestro)"
+      ],
+      "url": "https://play.google.com/store/search?q=rzgroupsas&c=apps&hl=en_US"
+    },
+    {
+      "name": "WhereMobile",
+      "isActive": true,
+      "description": "React Native (Expo) location-sharing app for contacts: “Where?” pings, interactive map, per-contact timeline, and push notifications.",
+      "highlights": [
+        "React Native 0.69 + Expo ~46 + TypeScript; React Navigation (stack and tabs)",
+        "MobX and MobX-State-Tree (auth, user, contacts, location); UI with twrnc and Formik + Yup",
+        "Contact management with swipe actions; location pings and map via react-native-maps",
+        "Location history timeline per contact; push via expo-notifications; Expo location and contacts permissions",
+        "Distributed backend (main API + contacts and location microservices); Jest, Detox, and Storybook"
+      ],
+      "url": "https://play.google.com/store/search?q=wheremobile&c=apps&hl=en_US"
+    },
+    {
+      "name": "CoallyApp",
+      "isActive": true,
+      "description": "React Native (Expo) mobile app connecting students with educational and training opportunities, with AI-assisted support.",
+      "highlights": [
+        "React Native 0.76 + Expo 52 + TypeScript; Ignite 10 boilerplate with a layered structure",
+        "State with MobX and MobX-State-Tree; persistence with MMKV and AsyncStorage",
+        "Dashboard, profile, training catalog, and opportunities modules; authentication and school selection",
+        "i18next across multiple languages (es, en, fr, hi, ar, ja, ko); light/dark theme and environment-based config",
+        "UI with twrnc, Reanimated, and bottom sheets; REST APIs via apisauce and Reactotron debugging"
+      ],
+      "url": "https://play.google.com/store/search?q=coally&c=apps&hl=en_US"
     },
     {
       "name": "Myngly",
