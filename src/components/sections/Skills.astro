@@ -55,18 +55,28 @@ const SKILLS_ICONS: Record<string, any> = {
   PostgresSQL,
   Docker,
 }
+
+const ICON_ALIASES: Record<string, string> = {
+  "Node.js": "Node",
+  "SQL Server": "SQLServer",
+  PostgreSQL: "PostgresSQL",
+  PHP: "Php",
+  NestJS: "NestJs",
+}
 ---
 
 <Section title={title}>
   <ul>
     {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
+      skills.map(({ name, keywords }) => {
+        const iconName = ICON_ALIASES[name] ?? (name === "Next.js" ? "Next" : name)
         const Icon = SKILLS_ICONS[iconName]
+        const keywordsLine = Array.isArray(keywords) ? keywords.join(", ") : ""
 
         return (
           <li>
             {Icon && <Icon />} <span>{name}</span>
+            {keywordsLine && <small class="print"> - {keywordsLine}</small>}
           </li>
         )
       })
@@ -91,5 +101,11 @@ const SKILLS_ICONS: Record<string, any> = {
     font-weight: 500;
     gap: 4px;
     padding: 0.2rem 0.6rem;
+  }
+
+  small {
+    color: #444;
+    font-size: 0.72rem;
+    font-weight: 400;
   }
 </style>

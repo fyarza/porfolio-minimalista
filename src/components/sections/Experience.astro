@@ -17,9 +17,18 @@ const work = cvData?.work ?? workDefault
     {
       work.map(
         ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+          const start = new Date(startDate)
+          const startLabel = start.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+          })
+          const endLabel =
+            endDate != null
+              ? new Date(endDate).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                })
+              : "Present"
 
           return (
             <li>
@@ -38,19 +47,26 @@ const work = cvData?.work ?? workDefault
                     <time 
                       datetime={startDate}
                       data-title={startDate}>
-                        {startYear}
+                        {startLabel}
                     </time>
                     {" - "}
                     <time 
                       datetime={endDate}
                       data-title={endDate}>
-                        {endYear}
+                        {endLabel}
                     </time>
                   </div>
                 </header>
 
                 <footer>
                   <p>{summary}</p>
+                  {Array.isArray(highlights) && highlights.length > 0 && (
+                    <ul class="highlights">
+                      {highlights.map((highlight) => (
+                        <li>{highlight}</li>
+                      ))}
+                    </ul>
+                  )}
                 </footer>
               </article>
             </li>
@@ -91,6 +107,26 @@ const work = cvData?.work ?? workDefault
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .highlights {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 4px;
+  }
+
+  .highlights li {
+    color: #444;
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
   time {

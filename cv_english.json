@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Federico Antonio Yarza Castillo",
-    "label": "Full Stack Developer with more than 8 years of experience in mobile and web software development",
+    "label": "Senior Full Stack Developer | React, Next.js, Node.js, NestJS, TypeScript",
     "image": "/me.webp",
     "email": "federicoyarza295@gmail.com",
     "phone": "+58 4124067967",
     "url": "https://github.com/fyarza",
-    "summary": "+8 years of experience as a Full Stack Web and Mobile Developer. Currently I am a Full Stack Developer at Epidata working on projects such as Gabrica Hub and ANII Postulaciones. I live in Valencia, Venezuela. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies, always focused on developing scalable and customized solutions that accelerate the digital transformation of organizations.",
+    "summary": "Senior Full Stack Developer with 8+ years of experience building scalable web and mobile applications with React, Next.js, Node.js, NestJS, TypeScript, PHP, Laravel, SQL, Docker and CI/CD. Experienced in enterprise systems, microservices, REST APIs, cloud-ready architectures, Agile/Scrum delivery, technical mentoring and cross-functional collaboration.",
     "location": {
       "address": "Valencia, Carabobo",
       "postalCode": "2001",
@@ -34,15 +34,15 @@
       "url": "https://epidata.net/es/",
       "startDate": "2023-01-01",
       "endDate": null,
-      "summary": "Development of enterprise solutions and management systems, using modern and efficient technologies. I led critical projects such as the Multi-Country Digital Hub for Gabrica and system modernization for ANII.",
+      "summary": "Full Stack Developer for enterprise platforms, multi-country digital products and legacy modernization initiatives using Next.js, NestJS, TypeScript, PHP, SQL, Docker, CI/CD and Agile/Scrum practices.",
       "highlights": [
-        "Led the migration of the PHP 5.3 to 8.2 ecosystem for ANII, improving performance and security",
-        "Designed and implemented a monorepo with Turborepo and pnpm workspaces for Gabrica Hub",
-        "Implemented Multi-Zone architecture with Next.js, unifying multiple applications under a single domain",
-        "Developed backend with NestJS 10.x applying Domain-Driven Design (DDD) and Hexagonal Architecture",
-        "Established testing strategies with minimum 80% coverage in shared packages",
-        "Implemented multi-country internationalization with next-intl for 5 countries (Argentina, Colombia, Chile, Uruguay, Paraguay)",
-        "Acted as technical mentor for the development team"
+        "Led ANII modernization by migrating a legacy PHP 5.3 ecosystem to PHP 8.2, improving maintainability, security posture and long-term platform scalability",
+        "Designed a Turborepo monorepo with pnpm workspaces for Gabrica Hub, standardizing shared packages, build pipelines and team collaboration across multiple applications",
+        "Implemented a Next.js Multi-Zone architecture to unify B2C, B2B and regional applications under a single domain and improve multi-application delivery",
+        "Built NestJS 10.x backend services using Domain-Driven Design, Hexagonal Architecture, REST APIs and SQL integrations for enterprise workflows",
+        "Established automated testing standards with a minimum 80% coverage target for shared packages, improving regression control and release confidence",
+        "Delivered multi-country internationalization with next-intl for 5 countries: Argentina, Colombia, Chile, Uruguay and Paraguay",
+        "Mentored developers through code reviews, architecture guidance and Agile delivery practices"
       ]
     },
     {
@@ -50,11 +50,11 @@
       "position": "Full Stack Mobile Developer",
       "startDate": "2022-03-01",
       "endDate": "2022-10-01",
-      "summary": "Mobile application development with focus on offline-first experience and optimization of geolocation functionalities for dating and service applications.",
+      "summary": "Full Stack Mobile Developer focused on React Native applications, offline-first features, geolocation, API integrations, performance and user experience.",
       "highlights": [
-        "Designed and developed physical training application with offline-first approach",
-        "Optimized geolocation functionalities for dating application, improving accuracy and performance",
-        "Led complete refactoring of beverage search application for restaurants"
+        "Designed and developed an offline-first fitness application, improving reliability for users with limited connectivity",
+        "Optimized geolocation features for a dating application, improving location accuracy, map interactions and mobile performance",
+        "Led the full refactoring of a restaurant beverage search application, improving maintainability and feature delivery speed"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "position": "Technology Consultant and Independent Developer",
       "startDate": "2020-07-01",
       "endDate": "2022-04-01",
-      "summary": "Design and implementation of customized digital solutions for various business sectors, including ERP systems, e-commerce, analytical dashboards and educational platforms.",
+      "summary": "Independent consultant delivering web and mobile solutions for ERP, e-commerce, analytics dashboards, automation and education platforms.",
       "highlights": [
-        "Development of web and mobile applications with integration to ERP and accounting systems",
-        "Implementation of e-commerce solutions with connection to multiple payment platforms",
-        "Creation of interfaces for satellite data management",
-        "Design of comprehensive system for social media management and automation",
-        "Creation of platform for student management with attendance and grades control"
+        "Delivered web and mobile applications integrated with ERP and accounting systems for business process automation",
+        "Implemented e-commerce solutions with multiple payment integrations, improving checkout flexibility for client businesses",
+        "Built analytical dashboards and data management interfaces for operational reporting and decision-making",
+        "Designed a social media automation platform to centralize campaign management and workflow execution",
+        "Created an education management platform with attendance tracking, grades control and administrative workflows"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "position": "Full Stack Developer with Specialization in Enterprise Solutions",
       "startDate": "2018-06-01",
       "endDate": "2020-06-01",
-      "summary": "Comprehensive web development combining modern frontend technologies (React.js, Vue.js) with robust backend solutions in Laravel and PHP. Specialization in enterprise systems and digital transformation.",
+      "summary": "Full Stack Developer for enterprise web systems, accounting platforms, payment modules and digital transformation projects using React, Vue.js, Laravel, PHP and SQL.",
       "highlights": [
-        "Development of ARP accounting administrative system for Lecomp",
-        "Implementation of microservices architecture for wholesale system",
-        "Development of custom payment module for Prestashop",
-        "Digital transformation of companies: Rv. Medios, Vepaco, Cobertura y Tasas, Lecomp",
-        "Comprehensive web development with React.js, Vue.js, Laravel and PHP"
+        "Developed an accounting and administrative ERP system for Lecomp, supporting finance and operational workflows",
+        "Implemented a microservices architecture for a wholesale system, improving modularity and backend maintainability",
+        "Built a custom Prestashop payment module to support tailored checkout and transaction flows",
+        "Delivered digital transformation projects for Rv. Medios, Vepaco, Cobertura y Tasas and Lecomp",
+        "Built full stack web applications with React.js, Vue.js, Laravel, PHP, SQL and REST APIs"
       ]
     }
   ],
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "name": "Node",
+      "name": "Node.js",
       "level": "Advanced",
       "keywords": [
         "Web development",
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "name": "SQLServer",
+      "name": "SQL Server",
       "level": "Advanced",
       "keywords": [
         "Databases",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "name": "PostgresSQL",
+      "name": "PostgreSQL",
       "level": "Advanced",
       "keywords": ["Databases", "SQL", "Data Storage", "Relational Database"]
     },
@@ -232,7 +232,7 @@
       ]
     },
     {
-      "name": "Php",
+      "name": "PHP",
       "level": "Master",
       "keywords": [
         "PHP Development",
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "name": "NestJs",
+      "name": "NestJS",
       "level": "Advanced",
       "keywords": [
         "Backend Development",
@@ -343,6 +343,22 @@
       "name": "next-intl",
       "level": "Advanced",
       "keywords": ["Internationalization", "i18n", "Next.js", "Multi-language"]
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "Intermediate",
+      "keywords": ["AWS", "Azure", "Cloud Architecture", "Kubernetes", "Docker"]
+    },
+    {
+      "name": "Agile Delivery",
+      "level": "Advanced",
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "Team Leadership",
+        "Collaboration",
+        "Mentoring"
+      ]
     }
   ],
   "languages": [

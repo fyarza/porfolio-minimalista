@@ -1,4 +1,3 @@
-
 <div align="center">
 <h2>
     <em>Portafolio Personal</em> - Federico Antonio Yarza Castillo
@@ -112,12 +111,12 @@ Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ve
 
 ## 🧞 Comandos
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa de la build de producción en local. |
-| ⚙️  | `check`          | Valida tipos con Astro Check (opcional). |
+|     | Comando         | Acción                                                     |
+| :-- | :-------------- | :--------------------------------------------------------- |
+| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en `localhost:4321`. |
+| ⚙️  | `build`         | Hace un empaquetado de producción en `./dist/`.            |
+| ⚙️  | `preview`       | Vista previa de la build de producción en local.           |
+| ⚙️  | `check`         | Valida tipos con Astro Check (opcional).                   |
 
 ## 🌐 Versiones del Sitio
 
@@ -125,6 +124,8 @@ Este portafolio está disponible en dos idiomas:
 
 - **Español**: [https://fyarza.github.io/porfolio-minimalista/](https://fyarza.github.io/porfolio-minimalista/)
 - **English**: [https://fyarza.github.io/porfolio-minimalista/en](https://fyarza.github.io/porfolio-minimalista/en)
+- **ATS (ES)**: `/ats`
+- **ATS (EN)**: `/en/ats`
 
 ## 📦 Estructura del Proyecto
 
