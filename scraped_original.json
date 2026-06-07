@@ -1,0 +1,13 @@
+{
+  "deepScrape": true,
+  "limitPerSource": 150,
+  "rawData": false,
+  "urls": [
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cautomation%20expert%E2%80%9D%20AND%20%E2%80%9Chiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=FACETED_SEARCH&sortBy=%5B%22date_posted%22%5D",
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cautomation%20engineer%E2%80%9D%20AND%20hiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=GLOBAL_SEARCH_HEADER&sortBy=%5B%22date_posted%22%5D",
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cautomation%20specialist%E2%80%9D%20AND%20%E2%80%9Chiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=FACETED_SEARCH&sortBy=%5B%22date_posted%22%5D",
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cworkflow%20automation%E2%80%9D%20AND%20hiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=GLOBAL_SEARCH_HEADER&sortBy=%5B%22date_posted%22%5D",
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cn8n%20expert%20%E2%80%9C%20AND%20%E2%80%9Chiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=GLOBAL_SEARCH_HEADER&sortBy=%5B%22date_posted%22%5D",
+    "https://www.linkedin.com/search/results/content/?keywords=%E2%80%9Cai%20automation%E2%80%9D%20AND%20hiring%E2%80%9D%20AND%20%E2%80%9Cn8n%E2%80%9D%20NOT%20%28%E2%80%9Cintern%E2%80%9D%20OR%20%E2%80%9Cinternship%E2%80%9D%29%20%20NOT%20%E2%80%9Copen%20to%20work%E2%80%9D&origin=GLOBAL_SEARCH_HEADER&sortBy=%5B%22date_posted%22%5D"
+  ]
+}

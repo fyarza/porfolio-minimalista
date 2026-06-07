@@ -1,13 +1,15 @@
 ---
-import { basics } from "@cv"
+import { basics as defaultBasics } from "@cv"
+import type { CV } from "@/cv.d"
 
 interface Props {
   title: string
+  cvData?: CV
 }
 
-const { title } = Astro.props
+const { title, cvData } = Astro.props
 
-const { image, summary, url } = basics
+const { image, summary, url } = cvData?.basics ?? defaultBasics
 // Asegurar que las rutas usen el base path correctamente
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '') // Remover barra final si existe
 const imagePath = image.startsWith('/') 

@@ -1,0 +1,117 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import LecompCaseStudy from "@/components/sections/LecompCaseStudy.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import SistemasBanner from "@/components/sections/SistemasBanner.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+
+import cvSistemas from "../../cv_sistemas.json"
+import type { CV } from "@/cv.d"
+
+const cvData = cvSistemas as CV
+const { name, label, email } = cvData.basics
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "")
+---
+
+<Layout
+  title={`${name} — Sistemas & ERP Profit Plus`}
+  cvData={cvData}
+>
+  <SistemasBanner />
+
+  <main>
+    <Hero cvData={cvData} />
+    <About cvData={cvData} title="Perfil profesional" />
+    <LecompCaseStudy />
+    <Experience cvData={cvData} title="Experiencia relevante" />
+    <Projects cvData={cvData} title="Proyectos clave" />
+    <Skills cvData={cvData} title="Habilidades técnicas" />
+    <Education cvData={cvData} />
+
+    <section class="cta no-print">
+      <h2>¿Conversamos?</h2>
+      <p>
+        Disponible para roles de encargado de sistemas, analista de sistemas o responsable técnico
+        sobre ERP Profit Plus y entornos SQL Server.
+      </p>
+      <a href={`${baseUrl}/sistemas/ats`} class="secondary">
+        Descargar versión ATS
+      </a>
+    </section>
+  </main>
+
+  <KeyboardManager cvData={cvData} />
+</Layout>
+
+<style>
+  main {
+    padding: 2rem 4rem 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  .cta {
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .cta h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+  }
+
+  .cta p {
+    margin-bottom: 1.25rem;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  .cta a {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0 0.35rem;
+    transition: background 0.2s;
+  }
+
+  .cta a:hover {
+    background: #333;
+    text-decoration: none;
+  }
+
+  .cta a.secondary {
+    background: transparent;
+    color: #111;
+    border: 1px solid #ddd;
+  }
+
+  .cta a.secondary:hover {
+    background: #f5f5f5;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 1rem 2rem 2rem;
+    }
+
+    .cta a {
+      display: block;
+      margin: 0.5rem auto;
+      max-width: 240px;
+    }
+  }
+</style>

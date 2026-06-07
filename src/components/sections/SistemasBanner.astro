@@ -1,0 +1,43 @@
+---
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "")
+---
+
+<nav class="banner no-print" aria-label="Navegación del portafolio de sistemas">
+  <a href={`${baseUrl}/`} class="back-link">← Portafolio completo</a>
+  <a href={`${baseUrl}/sistemas/ats`} class="ats-link">Versión ATS / PDF</a>
+</nav>
+
+<style>
+  .banner {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: #555;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+
+  .ats-link {
+    font-weight: 500;
+  }
+
+  @media (width <= 700px) {
+    .banner {
+      padding: 0 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

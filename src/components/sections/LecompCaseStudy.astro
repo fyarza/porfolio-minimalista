@@ -1,0 +1,254 @@
+---
+import Section from "../Section.astro"
+
+interface Props {
+  title?: string
+}
+
+const { title = "Caso destacado: LECOMP sobre Profit Plus" } = Astro.props
+
+const metrics = [
+  { value: "~30", label: "Stored procedures" },
+  { value: "12+", label: "Sub-portales" },
+  { value: "70+", label: "Permisos RBAC" },
+  { value: "2", label: "Monedas Bs/USD" },
+]
+
+const flow = [
+  "Cotización",
+  "Picking",
+  "Facturación",
+  "Pago",
+  "Retención IVA",
+  "Reportes",
+]
+
+const roles = [
+  "Clientes B2B",
+  "Vendedores",
+  "Contadores",
+  "Administradores",
+]
+---
+
+<Section title={title}>
+  <div class="case-study">
+    <p class="lead">
+      Portal B2B para <strong>Lecomp International Group</strong> (importadora de repuestos automotrices)
+      construido sobre <strong>Profit Plus 200 / Admin Plus 200</strong>. La capa web delega la lógica de
+      negocio al ERP vía SQL Server — no duplica reglas contables en la aplicación.
+    </p>
+
+    <div class="metrics">
+      {metrics.map(({ value, label }) => (
+        <div class="metric">
+          <span class="metric-value">{value}</span>
+          <span class="metric-label">{label}</span>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Ciclo order-to-cash</h3>
+        <ol class="flow">
+          {flow.map((step, i) => (
+            <li>
+              <span class="step-num">{i + 1}</span>
+              {step}
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Usuarios soportados</h3>
+        <ul class="roles">
+          {roles.map((role) => (
+            <li>{role}</li>
+          ))}
+        </ul>
+        <p class="card-note">
+          Sesión única por dispositivo, timeout de 20 min y permisos granulares con Shinobi.
+        </p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>Stack técnico</h3>
+      <div class="tags">
+        <span>Profit Plus 200</span>
+        <span>SQL Server</span>
+        <span>Laravel 5.7</span>
+        <span>Stored Procedures</span>
+        <span>JasperReports</span>
+        <span>DomPDF</span>
+        <span>Excel XLSX</span>
+        <span>DataTables</span>
+        <span>SENIAT / IVA</span>
+      </div>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .case-study {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #444;
+  }
+
+  .lead strong {
+    color: #111;
+    font-weight: 600;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+
+  .metric {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  .metric-value {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+    font-family: system-ui, sans-serif;
+  }
+
+  .metric-label {
+    display: block;
+    font-size: 0.65rem;
+    color: #666;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .card h3,
+  .stack h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .flow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .flow li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #444;
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .roles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .roles li {
+    background: #eee;
+    border-radius: 6px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    color: #333;
+  }
+
+  .card-note {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.4;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tags span {
+    background: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.7rem;
+    color: #333;
+  }
+
+  .pitch {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid #111;
+    background: #fafafa;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  @media (width <= 700px) {
+    .metrics {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

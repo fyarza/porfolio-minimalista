@@ -1,0 +1,245 @@
+{
+  "basics": {
+    "name": "Federico Antonio Yarza Castillo",
+    "label": "Tecnólogo de Sistemas | ERP Profit Plus · SQL Server · Integración empresarial",
+    "image": "/me.webp",
+    "email": "federicoyarza295@gmail.com",
+    "phone": "+58 4124067967",
+    "url": "https://github.com/fyarza",
+    "summary": "Tecnólogo con 8+ años en sistemas de información empresariales. Experiencia directa con Profit Plus 200 / Admin Plus 200 sobre SQL Server: integración vía stored procedures, reportes operativos, flujos multi-moneda (Bs/USD), retenciones IVA y portales B2B para equipos de ventas, contabilidad y administración. Perfil híbrido: traduzco reglas de negocio del ERP en soluciones que los usuarios operan a diario, y complemento con desarrollo full stack para extensiones e integraciones cuando el sistema lo requiere.",
+    "location": {
+      "address": "Valencia, Carabobo",
+      "postalCode": "2001",
+      "city": "Valencia",
+      "countryCode": "VE",
+      "region": "Venezuela"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fyarza",
+        "url": "https://linkedin.com/in/federico-antonio-yarza-castillo-351621163"
+      },
+      {
+        "network": "GitHub",
+        "username": "fyarza",
+        "url": "https://github.com/fyarza"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Rv. Medios C.A.",
+      "position": "Desarrollador Full Stack · Soluciones sobre ERP Profit Plus",
+      "startDate": "2018-06-01",
+      "endDate": "2020-06-01",
+      "summary": "Responsable técnico de extensiones y portales sobre Profit Plus 200 (SQL Server) para clientes empresariales. Puente entre usuarios de negocio, contabilidad y la capa de datos del ERP en entornos de importación, distribución y retail.",
+      "highlights": [
+        "Lideré el portal B2B LECOMP sobre Profit Plus 200: ciclo order-to-cash (cotizaciones, picking, facturación, pagos, retenciones IVA) para Lecomp International Group",
+        "Integré ~30 stored procedures en SQL Server y 3 conexiones sqlsrv hacia tablas nativas Profit Plus y esquema sysweb_",
+        "Implementé flujos multi-moneda Bs/USD, motor de descuentos, confirmación de pagos con evidencia y retenciones alineadas a normativa SENIAT",
+        "Diseñé RBAC con 70+ permisos para vendedores, contadores, clientes y administradores en 12+ sub-portales operativos",
+        "Entregué reportes con JasperReports, DomPDF, Excel y DataTables server-side para operaciones y gerencia",
+        "Ejecuté proyectos de transformación digital para Rv. Medios, Vepaco, Cobertura y Tasas y Lecomp"
+      ]
+    },
+    {
+      "name": "Epidata",
+      "position": "Desarrollador Full Stack",
+      "url": "https://epidata.net/es/",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "summary": "Modernización de plataformas legacy, integraciones SQL y entrega de productos empresariales multi-país.",
+      "highlights": [
+        "Lideré migración PHP 5.3 → 8.2 en ANII, mejorando mantenibilidad y seguridad de sistemas críticos de gobierno",
+        "Construí servicios NestJS con integraciones SQL y arquitectura hexagonal para flujos empresariales",
+        "Participé en Vanguard con infraestructura local SQL Server, Redis y despliegue en Kubernetes"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Consultor Tecnológico · Integraciones ERP",
+      "startDate": "2020-07-01",
+      "endDate": "2022-04-01",
+      "summary": "Consultor independiente en integraciones ERP, dashboards operativos y automatización de procesos para PYMEs.",
+      "highlights": [
+        "Entregué aplicaciones web y móviles integradas con sistemas ERP y contables para automatización de procesos",
+        "Construí dashboards analíticos e interfaces de gestión de datos para reportes operativos y toma de decisiones",
+        "Implementé soluciones e-commerce con integraciones de pago y flujos de checkout a medida"
+      ]
+    },
+    {
+      "name": "Devinol S.A",
+      "position": "Desarrollador Full Stack Mobile",
+      "startDate": "2022-03-01",
+      "endDate": "2022-10-01",
+      "summary": "Desarrollo móvil con enfoque en integraciones API y experiencia de usuario.",
+      "highlights": [
+        "Desarrollé aplicaciones React Native con integraciones REST y manejo de datos offline-first"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Facultad Experimental de Ciencias y Tecnología - Universidad de Carabobo",
+      "url": "http://www.uc.edu.ve/",
+      "area": "Licenciatura en Computación",
+      "studyType": "Bachelor",
+      "startDate": "2008-01-01",
+      "endDate": "2018-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Profit Plus",
+      "level": "Avanzado",
+      "keywords": [
+        "ERP",
+        "Admin Plus 200",
+        "Profit Plus 200",
+        "Sistemas empresariales"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Stored Procedures",
+        "Triggers",
+        "Functions",
+        "Microsoft SQL Server",
+        "Integración ERP"
+      ]
+    },
+    {
+      "name": "ERP",
+      "level": "Avanzado",
+      "keywords": [
+        "Integración ERP",
+        "Order-to-cash",
+        "Procesos contables",
+        "Reportes operativos"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Master",
+      "keywords": ["Laravel", "Backend", "Integración ERP", "PHP 8.2"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": ["Bases de Datos", "SQL", "Relational Database"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Avanzado",
+      "keywords": ["Bases de Datos", "SQL", "Relational Database"]
+    },
+    {
+      "name": "Reportes empresariales",
+      "level": "Avanzado",
+      "keywords": [
+        "JasperReports",
+        "DomPDF",
+        "Excel",
+        "DataTables",
+        "Exportación XLSX"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "Type Safety"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Avanzado",
+      "keywords": ["Backend", "REST API", "Integraciones"]
+    },
+    {
+      "name": "NestJS",
+      "level": "Avanzado",
+      "keywords": ["Backend", "Microservices", "SQL integrations"]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Frontend", "UI", "Aplicaciones web"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": ["Frontend", "SSR", "Aplicaciones empresariales"]
+    },
+    {
+      "name": "Docker",
+      "level": "Medio",
+      "keywords": ["Contenedores", "DevOps", "Entornos de desarrollo"]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "CI/CD"]
+    },
+    {
+      "name": "Agile Delivery",
+      "level": "Avanzado",
+      "keywords": ["Agile", "Scrum", "Mentoría", "Colaboración"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "projects": [
+    {
+      "name": "LECOMP B2B Portal",
+      "isActive": false,
+      "description": "Portal web B2B privado sobre el ERP legacy Profit Plus 200 / Admin Plus 200 (SQL Server) para Lecomp International Group C.A., importadora y distribuidora venezolana de repuestos automotrices. Expone el ciclo order-to-cash — cotizaciones, picking, facturación, pagos, retenciones IVA y reportes — a clientes, vendedores, contadores y administradores mediante una UI web moderna server-rendered.",
+      "highlights": [
+        "Laravel 5.7 · ~58 controladores · 223 vistas Blade",
+        "~30 stored procedures en SQL Server",
+        "Multi-moneda Bs/USD · retenciones SENIAT",
+        "RBAC 70+ permisos · 12+ sub-portales",
+        "JasperReports · DomPDF · Excel"
+      ],
+      "url": "https://www.facebook.com/LecompInternationalGroup"
+    },
+    {
+      "name": "Postulaciones ANII",
+      "isActive": true,
+      "description": "Modernización de sistema legacy de gobierno: migración PHP 5.3 a 8.2 con arquitectura SOLID y gestión integral de formularios.",
+      "highlights": [
+        "Migración PHP 5.3 a 8.2",
+        "Sistemas críticos de gobierno",
+        "Arquitectura moderna SOLID"
+      ],
+      "url": "https://postulaciones-ti.anii.org.uy/"
+    },
+    {
+      "name": "Vanguard (Epidata)",
+      "isActive": true,
+      "description": "Plataforma multi-servicio con SQL Server, Redis y despliegue Kubernetes — experiencia reciente en infraestructura de datos empresarial.",
+      "highlights": [
+        "SQL Server en docker-compose",
+        "CI/CD con GitHub Actions",
+        "Kubernetes y SonarQube"
+      ],
+      "url": "https://epidata.net/es/"
+    }
+  ]
+}

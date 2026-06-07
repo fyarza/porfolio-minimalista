@@ -78,7 +78,7 @@
       "endDate": "2020-06-01",
       "summary": "Desarrollador Full Stack en sistemas empresariales, plataformas contables, módulos de pago y proyectos de transformación digital usando React, Vue.js, Laravel, PHP y SQL.",
       "highlights": [
-        "Desarrollé un sistema ERP contable y administrativo para Lecomp, soportando flujos financieros y operativos",
+        "Desarrollé el portal B2B LECOMP sobre ERP Profit Plus 200 (SQL Server) para Lecomp International Group, cubriendo cotizaciones, pagos multi-moneda, retenciones IVA y reportes",
         "Implementé arquitectura de microservicios para un sistema mayorista, mejorando modularidad y mantenibilidad backend",
         "Construí un módulo de pagos personalizado para Prestashop, soportando flujos de checkout y transacciones a medida",
         "Entregué proyectos de transformación digital para Rv. Medios, Vepaco, Cobertura y Tasas y Lecomp",
@@ -424,6 +424,20 @@
       "description": "Mantenimiento y actualización permanente de información validada, acerca de las capacidades del capital humano del Uruguay",
       "highlights": ["Gestión de información del capital humano"],
       "url": "https://cvuy-ti.anii.org.uy/"
+    },
+    {
+      "name": "LECOMP B2B Portal",
+      "isActive": false,
+      "description": "Portal web B2B privado sobre el ERP legacy Profit Plus 200 / Admin Plus 200 (SQL Server) para Lecomp International Group C.A., importadora y distribuidora venezolana de repuestos automotrices. Expone el ciclo order-to-cash — cotizaciones, picking, facturación, pagos, retenciones IVA y reportes — a clientes, vendedores, contadores y administradores mediante una UI web moderna server-rendered.",
+      "highlights": [
+        "Laravel 5.7 monolito (~58 controladores, 223 vistas Blade); capa HTTP delgada que delega toda la lógica de negocio al ERP vía stored procedures",
+        "Integración con SQL Server: ~30 stored procedures (sysweb_pProcesarCotizacion, reportes, precios Bs/USD) y 3 conexiones sqlsrv (sysweb_ + tablas nativas Profit Plus)",
+        "Multi-moneda Bs/USD con tasa diaria, motor de descuentos, pagos con evidencia fotográfica y retenciones IVA adaptadas a flujos SENIAT/Venezuela",
+        "RBAC con Caffeinated Shinobi (70+ permisos), sesiones de un solo dispositivo y timeout por inactividad de 20 minutos",
+        "Reportes con DataTables server-side, JasperReports, DomPDF y Maatwebsite Excel (import/export XLSX con logos y columnas dinámicas)",
+        "12+ sub-portales: pedidos/cotizaciones, picking/vendedor, confirmación de pagos, retenciones, catálogo, precios, tasa del día y CMS"
+      ],
+      "url": "https://www.facebook.com/LecompInternationalGroup"
     },
     {
       "name": "Fletamos",
