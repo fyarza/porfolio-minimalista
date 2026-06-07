@@ -7,11 +7,13 @@ import Experience from "@/components/sections/Experience.astro"
 import Hero from "@/components/sections/Hero.astro"
 import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
+import ExternalLinks from "@/components/sections/ExternalLinks.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 
 import cvEnglish from "../../cv_english.json"
 const { basics } = cvEnglish
 const { name, label } = basics
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "")
 ---
 
 <Layout
@@ -27,6 +29,15 @@ const { name, label } = basics
     <Education cvData={cvEnglish} title="Education" />
     <Projects cvData={cvEnglish} title="Projects" />
     <Skills cvData={cvEnglish} title="Skills" />
+    <ExternalLinks
+      cvData={cvEnglish}
+      title="Find me on"
+      emailLabel="Email"
+    >
+      <a href={`${baseUrl}/sistemas/`} class="btn btn-outline" title="Systems & Profit Plus portfolio">
+        Systems Portfolio
+      </a>
+    </ExternalLinks>
   </main>
 
   <KeyboardManager 

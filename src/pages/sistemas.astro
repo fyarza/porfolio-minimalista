@@ -9,6 +9,7 @@ import LecompCaseStudy from "@/components/sections/LecompCaseStudy.astro"
 import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 import SistemasBanner from "@/components/sections/SistemasBanner.astro"
+import ExternalLinks from "@/components/sections/ExternalLinks.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 
 import cvSistemas from "../../cv_sistemas.json"
@@ -66,6 +67,15 @@ const jsonLd = {
     <Skills cvData={cvData} title="Habilidades técnicas" />
     <Education cvData={cvData} />
 
+    <ExternalLinks cvData={cvData} title="Perfiles y contacto">
+      <a href={`${baseUrl}/`} class="btn btn-outline" title="Portafolio completo de desarrollo">
+        Portafolio completo
+      </a>
+      <a href={`${baseUrl}/sistemas/ats`} class="btn btn-outline" title="CV ATS para imprimir o PDF">
+        Versión ATS
+      </a>
+    </ExternalLinks>
+
     <section class="cta no-print">
       <h2>¿Conversamos?</h2>
       <p>
@@ -74,9 +84,6 @@ const jsonLd = {
       </p>
       <a href={`mailto:${email}?subject=Consulta%20sobre%20rol%20de%20sistemas`}>
         Escribir por correo
-      </a>
-      <a href={`${baseUrl}/sistemas/ats`} class="secondary">
-        Descargar versión ATS
       </a>
     </section>
   </main>
