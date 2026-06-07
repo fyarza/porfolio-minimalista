@@ -27,6 +27,12 @@
       }
     ]
   },
+  "social": {
+    "title": "Federico Yarza · Sistemas & Profit Plus 200",
+    "description": "Tecnólogo de sistemas con experiencia en Profit Plus 200 y SQL Server. Portal B2B LECOMP: cotizaciones, facturación, multi-moneda Bs/USD y retenciones IVA.",
+    "image": "/og-sistemas.png",
+    "imageAlt": "Federico Yarza — Tecnólogo de Sistemas, ERP Profit Plus 200 y SQL Server"
+  },
   "work": [
     {
       "name": "Rv. Medios C.A.",

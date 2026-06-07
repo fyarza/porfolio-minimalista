@@ -27,6 +27,12 @@
       }
     ]
   },
+  "social": {
+    "title": "Federico Yarza · Senior Full Stack Developer",
+    "description": "8+ years building web and mobile apps with React, Next.js, Node.js, NestJS and TypeScript. Enterprise projects portfolio.",
+    "image": "/og-default.png",
+    "imageAlt": "Federico Yarza — Senior Full Stack Developer"
+  },
   "work": [
     {
       "name": "Epidata",

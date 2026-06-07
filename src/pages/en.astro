@@ -14,7 +14,12 @@ const { basics } = cvEnglish
 const { name, label } = basics
 ---
 
-<Layout title={`Portfolio of ${name} - ${label}`}>
+<Layout
+  title={`Portfolio of ${name} - ${label}`}
+  cvData={cvEnglish}
+  canonicalPath="/en/"
+  lang="en"
+>
   <main>
     <Hero cvData={cvEnglish} />
     <About cvData={cvEnglish} title="About me" />

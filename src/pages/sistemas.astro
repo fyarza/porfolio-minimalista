@@ -13,15 +13,47 @@ import KeyboardManager from "@/components/KeyboardManager.astro"
 
 import cvSistemas from "../../cv_sistemas.json"
 import type { CV } from "@/cv.d"
+import { absoluteUrl } from "@/lib/seo"
 
 const cvData = cvSistemas as CV
-const { name, label, email } = cvData.basics
+const { name, email, profiles } = cvData.basics
+const social = cvData.social
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "")
+const canonicalPath = "/sistemas/"
+const pageUrl = absoluteUrl(canonicalPath)
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name,
+  jobTitle: "Tecnólogo de Sistemas",
+  description: social?.description,
+  url: pageUrl,
+  image: absoluteUrl(social?.image ?? "/og-sistemas.png"),
+  email: `mailto:${email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: cvData.basics.location.city,
+    addressRegion: cvData.basics.location.region,
+    addressCountry: cvData.basics.location.countryCode,
+  },
+  knowsAbout: [
+    "Profit Plus 200",
+    "Admin Plus 200",
+    "SQL Server",
+    "ERP",
+    "Integración empresarial",
+    "Reportes operativos",
+  ],
+  sameAs: profiles.map((profile) => profile.url),
+}
 ---
 
 <Layout
   title={`${name} — Sistemas & ERP Profit Plus`}
   cvData={cvData}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
 >
   <SistemasBanner />
 
@@ -40,6 +72,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "")
         Disponible para roles de encargado de sistemas, analista de sistemas o responsable técnico
         sobre ERP Profit Plus y entornos SQL Server.
       </p>
+      <a href={`mailto:${email}?subject=Consulta%20sobre%20rol%20de%20sistemas`}>
+        Escribir por correo
+      </a>
       <a href={`${baseUrl}/sistemas/ats`} class="secondary">
         Descargar versión ATS
       </a>
