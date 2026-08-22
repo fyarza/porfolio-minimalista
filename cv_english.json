@@ -6,7 +6,7 @@
     "email": "federicoyarza295@gmail.com",
     "phone": "+58 4124067967",
     "url": "https://github.com/fyarza",
-    "summary": "Senior Full Stack Developer with 8+ years of experience building scalable web and mobile applications with React, Next.js, Node.js, NestJS, TypeScript, PHP, Laravel, SQL, Docker and CI/CD. Experienced in enterprise systems, microservices, REST APIs, cloud-ready architectures, Agile/Scrum delivery, technical mentoring and cross-functional collaboration.",
+    "summary": "Senior Full Stack Developer with 8+ years of experience building scalable web and mobile applications with React, Next.js, Node.js, NestJS, TypeScript, PHP, Laravel, SQL, Docker and CI/CD. Experienced in enterprise systems, Microservices, REST APIs, Cloud Computing, Agile, Scrum, Leadership, Mentoring and Collaboration with cross-functional teams.",
     "location": {
       "address": "Valencia, Carabobo",
       "postalCode": "2001",
@@ -36,19 +36,20 @@
   "work": [
     {
       "name": "Epidata",
-      "position": "Full Stack Developer",
+      "position": "Senior Full Stack Developer",
       "url": "https://epidata.net/es/",
       "startDate": "2023-01-01",
       "endDate": null,
-      "summary": "Full Stack Developer for enterprise platforms, multi-country digital products and legacy modernization initiatives using Next.js, NestJS, TypeScript, PHP, SQL, Docker, CI/CD and Agile/Scrum practices.",
+      "summary": "Senior Full Stack Developer for enterprise platforms, multi-country digital products and legacy modernization using Next.js, NestJS, TypeScript, PHP, SQL, Docker, CI/CD, Microservices, Cloud Computing and Agile/Scrum practices.",
       "highlights": [
         "Led ANII modernization by migrating a legacy PHP 5.3 ecosystem to PHP 8.2, improving maintainability, security posture and long-term platform scalability",
-        "Designed a Turborepo monorepo with pnpm workspaces for Gabrica Hub, standardizing shared packages, build pipelines and team collaboration across multiple applications",
-        "Implemented a Next.js Multi-Zone architecture to unify B2C, B2B and regional applications under a single domain and improve multi-application delivery",
-        "Built NestJS 10.x backend services using Domain-Driven Design, Hexagonal Architecture, REST APIs and SQL integrations for enterprise workflows",
-        "Established automated testing standards with a minimum 80% coverage target for shared packages, improving regression control and release confidence",
+        "Established automated testing standards with 80%+ coverage on shared packages, improving regression control and release confidence",
         "Delivered multi-country internationalization with next-intl for 5 countries: Argentina, Colombia, Chile, Uruguay and Paraguay",
-        "Mentored developers through code reviews, architecture guidance and Agile delivery practices"
+        "Built NestJS 10.x backend services and Microservices using Domain-Driven Design, Hexagonal Architecture, REST APIs and SQL integrations",
+        "Shipped Cloud Computing workloads with Docker, CI/CD pipelines and Kubernetes deployments on the Vanguard platform",
+        "Designed a Turborepo monorepo with pnpm workspaces for Gabrica Hub, standardizing shared packages, build pipelines and Collaboration across multiple applications",
+        "Implemented a Next.js Multi-Zone architecture to unify B2C, B2B and regional applications under a single domain",
+        "Mentored developers through code reviews, architecture guidance, Leadership and Agile/Scrum delivery practices"
       ]
     },
     {
@@ -58,8 +59,8 @@
       "endDate": "2022-10-01",
       "summary": "Full Stack Mobile Developer focused on React Native applications, offline-first features, geolocation, API integrations, performance and user experience.",
       "highlights": [
-        "Designed and developed an offline-first fitness application, improving reliability for users with limited connectivity",
-        "Optimized geolocation features for a dating application, improving location accuracy, map interactions and mobile performance",
+        "Designed and developed Fitlogger, an offline-first React Native fitness application, improving reliability for users with limited connectivity",
+        "Optimized geolocation features for the Myngly dating application, improving location accuracy, map interactions and mobile performance",
         "Led the full refactoring of a restaurant beverage search application, improving maintainability and feature delivery speed"
       ]
     },
@@ -70,7 +71,7 @@
       "endDate": "2022-04-01",
       "summary": "Independent consultant delivering web and mobile solutions for ERP, e-commerce, analytics dashboards, automation and education platforms.",
       "highlights": [
-        "Delivered web and mobile applications integrated with ERP and accounting systems for business process automation",
+        "Delivered 5 production platforms spanning ERP integration, e-commerce, analytics dashboards, social automation and education management",
         "Implemented e-commerce solutions with multiple payment integrations, improving checkout flexibility for client businesses",
         "Built analytical dashboards and data management interfaces for operational reporting and decision-making",
         "Designed a social media automation platform to centralize campaign management and workflow execution",
@@ -84,8 +85,8 @@
       "endDate": "2020-06-01",
       "summary": "Full Stack Developer for enterprise web systems, accounting platforms, payment modules and digital transformation projects using React, Vue.js, Laravel, PHP and SQL.",
       "highlights": [
-        "Built the LECOMP B2B portal on Profit Plus 200 ERP (SQL Server) for Lecomp International Group, covering quotes, dual-currency payments, IVA retentions, and operational reporting",
-        "Implemented a microservices architecture for a wholesale system, improving modularity and backend maintainability",
+        "Built the LECOMP B2B portal on Profit Plus 200 ERP (SQL Server) with 12+ sub-portals, 70+ RBAC permissions and ~30 stored procedures covering quotes, dual-currency payments, IVA retentions and operational reporting",
+        "Implemented a Microservices architecture for a wholesale system, improving modularity and backend maintainability",
         "Built a custom Prestashop payment module to support tailored checkout and transaction flows",
         "Delivered digital transformation projects for Rv. Medios, Vepaco, Cobertura y Tasas and Lecomp",
         "Built full stack web applications with React.js, Vue.js, Laravel, PHP, SQL and REST APIs"
@@ -353,14 +354,25 @@
     {
       "name": "Cloud Computing",
       "level": "Intermediate",
-      "keywords": ["AWS", "Azure", "Cloud Architecture", "Kubernetes", "Docker"]
+      "keywords": ["AWS", "Azure", "Cloud Computing", "Cloud Architecture", "Kubernetes", "Docker"]
     },
     {
-      "name": "Agile Delivery",
+      "name": "Microservices",
+      "level": "Advanced",
+      "keywords": ["REST APIs", "API Gateway", "NestJS", "Spring Boot", "Kubernetes"]
+    },
+    {
+      "name": "Leadership",
+      "level": "Advanced",
+      "keywords": ["Team Leadership", "Mentoring", "Collaboration"]
+    },
+    {
+      "name": "Agile",
       "level": "Advanced",
       "keywords": [
         "Agile",
         "Scrum",
+        "Leadership",
         "Team Leadership",
         "Collaboration",
         "Mentoring"
@@ -381,7 +393,7 @@
     {
       "name": "Postulaciones ANII",
       "isActive": true,
-      "description": "Proposal registration system for Uruguay's human capital",
+      "description": "Proposal registration system for Uruguay's human capital. Legacy modernization from PHP 5.3 to PHP 8.2 using SOLID architecture.",
       "highlights": [
         "PHP 5.3 to 8.2 migration",
         "Modern architecture with SOLID principles",
@@ -399,7 +411,7 @@
     {
       "name": "Gabrica Hub",
       "isActive": true,
-      "description": "Multi-country digital hub built with Next.js and NestJS to consolidate multiple business channels (B2C, B2B, MV, Ethics)",
+      "description": "Multi-country digital hub built with Next.js and NestJS to consolidate B2C, B2B, MV and Ethics channels across 5 countries, with 80%+ test coverage.",
       "highlights": [
         "Monorepo with Turborepo",
         "Multi-Zone architecture with Next.js",
