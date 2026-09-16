@@ -1,0 +1,349 @@
+---
+interface LanguageItem {
+  language: string
+  fluency: string
+}
+
+interface WorkItem {
+  name: string
+  position: string
+  startDate: string
+  endDate: string | null
+  summary: string
+  highlights?: string[]
+}
+
+interface SkillItem {
+  name: string
+}
+
+interface EducationItem {
+  area: string
+  institution: string
+  startDate: string
+  endDate: string | null
+}
+
+interface ProjectItem {
+  name: string
+  description: string
+  highlights?: string[]
+}
+
+interface ProfileItem {
+  network: string
+  url: string
+}
+
+interface Basics {
+  name: string
+  label: string
+  email: string
+  phone: string
+  url?: string
+  summary: string
+  location: {
+    city: string
+    region: string
+  }
+  profiles: ProfileItem[]
+}
+
+interface Props {
+  lang: "es" | "en"
+  basics: Basics
+  work: WorkItem[]
+  skills: SkillItem[]
+  education: EducationItem[]
+  projects: ProjectItem[]
+  languages?: LanguageItem[]
+}
+
+const { lang, basics, work, skills, education, projects, languages = [] } =
+  Astro.props
+
+const isEnglish = lang === "en"
+
+const copy = isEnglish
+  ? {
+      present: "Present",
+      contact: "Contact Information",
+      email: "Email",
+      phone: "Phone",
+      location: "Location",
+      website: "Website",
+      summary: "Professional Summary",
+      experience: "Work Experience",
+      skills: "Skills",
+      coreSkills: "Core skills",
+      technicalSkills: "Technical skills",
+      education: "Education",
+      projects: "Projects",
+      languages: "Languages",
+      locale: "en-US",
+    }
+  : {
+      present: "Presente",
+      contact: "Información de contacto / Contact Information",
+      email: "Email",
+      phone: "Teléfono",
+      location: "Ubicación",
+      website: "Sitio web",
+      summary: "Resumen profesional / Professional Summary",
+      experience: "Experiencia laboral / Work Experience",
+      skills: "Habilidades / Skills",
+      coreSkills: "Competencias clave",
+      technicalSkills: "Habilidades técnicas",
+      education: "Educación / Education",
+      projects: "Proyectos / Projects",
+      languages: "Idiomas / Languages",
+      locale: "es-ES",
+    }
+
+const formatDate = (value: string | null) => {
+  if (!value) return copy.present
+  return new Date(value).toLocaleDateString(copy.locale, {
+    year: "numeric",
+    month: "short",
+  })
+}
+
+const [roleTitle, roleStack] = basics.label
+  .split("|")
+  .map((part) => part.trim())
+
+const coreSkills = [
+  "Agile",
+  "Scrum",
+  "Microservices",
+  "Cloud Computing",
+  "Leadership",
+  "Team Leadership",
+  "Mentoring",
+  "Collaboration",
+  "CI/CD",
+  "REST APIs",
+  "Docker",
+  "Kubernetes",
+  "React Native",
+]
+
+const technicalSkills = Array.from(
+  new Set(skills.map((skill) => skill.name.trim()).filter(Boolean))
+)
+
+const featuredProjectNames = [
+  "Gabrica Hub",
+  "Vanguard (Epidata)",
+  "Postulaciones ANII",
+  "LECOMP B2B Portal",
+]
+
+const featuredProjects = featuredProjectNames
+  .map((name) => projects.find((project) => project.name === name))
+  .filter((project): project is ProjectItem => Boolean(project))
+
+const pageTitle = isEnglish
+  ? `ATS Resume - ${basics.name}`
+  : `CV ATS - ${basics.name}`
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <title>{pageTitle}</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111;
+        line-height: 1.45;
+        background: #fff;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 28px 24px 36px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-weight: 700;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .role {
+        margin: 6px 0 0;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+
+      .stack {
+        margin: 4px 0 0;
+        color: #333;
+        font-size: 0.95rem;
+      }
+
+      section {
+        margin-top: 18px;
+      }
+
+      section h2 {
+        font-size: 1rem;
+        border-bottom: 1px solid #222;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+      }
+
+      article {
+        margin-bottom: 14px;
+      }
+
+      article h3 {
+        font-size: 1rem;
+      }
+
+      article p,
+      .contact p {
+        margin: 2px 0;
+      }
+
+      .meta {
+        color: #333;
+      }
+
+      ul {
+        margin: 6px 0 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 4px;
+      }
+
+      .skills p {
+        margin: 0 0 6px;
+      }
+
+      @media print {
+        main {
+          padding: 0;
+          max-width: none;
+        }
+
+        article {
+          break-inside: avoid;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>{basics.name}</h1>
+        <p class="role">{roleTitle}</p>
+        {roleStack && <p class="stack">{roleStack}</p>}
+      </header>
+
+      <section>
+        <h2>{copy.contact}</h2>
+        <div class="contact">
+          <p>{copy.email}: {basics.email}</p>
+          <p>{copy.phone}: {basics.phone}</p>
+          <p>{copy.location}: {basics.location.city}, {basics.location.region}</p>
+          {basics.url && <p>{copy.website}: {basics.url}</p>}
+          {basics.profiles.map(({ network, url }) => (
+            <p>{network}: {url}</p>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2>{copy.summary}</h2>
+        <p>{basics.summary}</p>
+      </section>
+
+      <section>
+        <h2>{copy.experience}</h2>
+        {work.map((job) => (
+          <article>
+            <h3>{job.position}</h3>
+            <p class="meta">{job.name}</p>
+            <p class="meta">{formatDate(job.startDate)} - {formatDate(job.endDate)}</p>
+            <p>{job.summary}</p>
+            {Array.isArray(job.highlights) && job.highlights.length > 0 && (
+              <ul>
+                {job.highlights.map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
+            )}
+          </article>
+        ))}
+      </section>
+
+      <section class="skills">
+        <h2>{copy.skills}</h2>
+        <p>
+          <strong>{copy.coreSkills}:</strong> {coreSkills.join(", ")}
+        </p>
+        <p>
+          <strong>{copy.technicalSkills}:</strong> {technicalSkills.join(", ")}
+        </p>
+      </section>
+
+      <section>
+        <h2>{copy.education}</h2>
+        {education.map((item) => (
+          <article>
+            <h3>{item.area}</h3>
+            <p class="meta">{item.institution}</p>
+            <p class="meta">{formatDate(item.startDate)} - {formatDate(item.endDate)}</p>
+          </article>
+        ))}
+      </section>
+
+      {languages.length > 0 && (
+        <section>
+          <h2>{copy.languages}</h2>
+          {languages.map((item) => (
+            <p>{item.language}: {item.fluency}</p>
+          ))}
+        </section>
+      )}
+
+      <section>
+        <h2>{copy.projects}</h2>
+        {featuredProjects.map((project) => (
+          <article>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            {Array.isArray(project.highlights) && project.highlights.length > 0 && (
+              <ul>
+                {project.highlights.slice(0, 4).map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
+            )}
+          </article>
+        ))}
+      </section>
+    </main>
+  </body>
+</html>
