@@ -24,5 +24,6 @@ pnpm-debug.log*
 
 # local folders
 .history
+.atl/
 
 docsinternos/
