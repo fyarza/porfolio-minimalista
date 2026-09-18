@@ -354,12 +354,25 @@
     {
       "name": "Cloud Computing",
       "level": "Intermediate",
-      "keywords": ["AWS", "Azure", "Cloud Computing", "Cloud Architecture", "Kubernetes", "Docker"]
+      "keywords": [
+        "AWS",
+        "Azure",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Kubernetes",
+        "Docker"
+      ]
     },
     {
       "name": "Microservices",
       "level": "Advanced",
-      "keywords": ["REST APIs", "API Gateway", "NestJS", "Spring Boot", "Kubernetes"]
+      "keywords": [
+        "REST APIs",
+        "API Gateway",
+        "NestJS",
+        "Spring Boot",
+        "Kubernetes"
+      ]
     },
     {
       "name": "Leadership",
@@ -409,17 +422,26 @@
       "url": "https://generador-formularios-fe-ti.anii.org.uy/"
     },
     {
-      "name": "Gabrica Hub",
+      "name": "CVUy",
       "isActive": true,
-      "description": "Multi-country digital hub built with Next.js and NestJS to consolidate B2C, B2B, MV and Ethics channels across 5 countries, with 80%+ test coverage.",
+      "description": "Uruguay's human-capital CV platform. Maintenance and evolution of the Angular frontend together with the PHP backend.",
       "highlights": [
-        "Monorepo with Turborepo",
-        "Multi-Zone architecture with Next.js",
-        "DDD + Hexagonal Architecture",
-        "Multi-country: Argentina, Colombia, Chile, Uruguay, Paraguay",
-        "Testing with 80%+ coverage"
+        "Angular frontend",
+        "PHP backend",
+        "Forms, data entry, and day-to-day system operations"
       ],
-      "url": "https://www.gabrica.co/"
+      "url": "https://cvuy-ti.anii.org.uy/"
+    },
+    {
+      "name": "Cofaral",
+      "isActive": true,
+      "description": "Accounting and tax ERP where I worked full stack: Node.js and NestJS backend on MySQL, and a JavaScript, TypeScript, and React frontend.",
+      "highlights": [
+        "Full stack on NestJS (Node.js) microservices and REST APIs",
+        "JavaScript/TypeScript frontend with React",
+        "Accounting and tax domain: accounts and production operations"
+      ],
+      "url": "https://epidata.net/es/"
     },
     {
       "name": "Vanguard (Epidata)",
@@ -435,11 +457,17 @@
       "url": "https://epidata.net/es/"
     },
     {
-      "name": "CVUy",
+      "name": "Gabrica Hub",
       "isActive": true,
-      "description": "Maintenance and permanent updating of validated information about Uruguay's human capital capabilities",
-      "highlights": ["Human capital information management"],
-      "url": "https://cvuy-ti.anii.org.uy/"
+      "description": "Multi-country digital hub built with Next.js and NestJS to consolidate B2C, B2B, MV and Ethics channels across 5 countries, with 80%+ test coverage.",
+      "highlights": [
+        "Monorepo with Turborepo",
+        "Multi-Zone architecture with Next.js",
+        "DDD + Hexagonal Architecture",
+        "Multi-country: Argentina, Colombia, Chile, Uruguay, Paraguay",
+        "Testing with 80%+ coverage"
+      ],
+      "url": "https://www.gabrica.co/"
     },
     {
       "name": "LECOMP B2B Portal",
