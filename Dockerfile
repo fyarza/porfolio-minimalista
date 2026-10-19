@@ -1,11 +1,16 @@
-FROM node:22-alpine AS build
+# syntax=docker/dockerfile:1
+# Build en la CPU del host (Mac ARM); runtime para TARGETPLATFORM (linux/amd64 en VPS).
+
+FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 
 WORKDIR /app
 
 RUN npm install -g pnpm@10.15.1
 
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
+RUN pnpm config set fetch-retries 5 \
+ && pnpm config set fetch-timeout 300000 \
+ && pnpm install --frozen-lockfile
 
 COPY . .
 

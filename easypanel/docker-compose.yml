@@ -1,0 +1,10 @@
+# EasyPanel — servicio COMPOSE del portafolio (Astro estático + nginx)
+# Sin "ports": el dominio se asigna en EasyPanel → Dominios → puerto 80
+#
+# Imagen: fyarza/portafolio:0.1.0 (linux/amd64)
+# Build-args horneados: SITE y BASE_PATH=/
+
+services:
+  portafolio:
+    image: fyarza/portafolio:0.1.0
+    restart: unless-stopped
